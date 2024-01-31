@@ -61,10 +61,13 @@ textareas.forEach((textarea, index) => {
 
 // Récupérer le titre de niveau h1
 const h1Title = document.querySelector('h1').textContent.trim(); // Récupère le texte du titre de niveau h1 et le nettoie des espaces inutiles
+const h5Title = document.querySelector('h5').textContent.trim(); // Récupère le texte du titre de niveau h5 et le nettoie des espaces inutiles
+
 
 function downloadContent() {
   const content = [];
   content.push(h1Title); // Ajouter le titre de niveau h1
+  content.push(h5Title); // Ajouter le titre de niveau h5
   content.push('');
 
 
